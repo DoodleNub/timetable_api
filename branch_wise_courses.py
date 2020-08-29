@@ -30,6 +30,6 @@ for stream in streams:
 
 def save_obj():
     with open("cdc" + '.pkl', 'wb') as f:
-        pickle.dump(cdc, f)
+        pickle.dump(cdc, f,protocol=3)
 
 save_obj()
